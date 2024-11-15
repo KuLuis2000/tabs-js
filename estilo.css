@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  background-color: #f0f3f8;
+}
+
+.ancho {
+  max-width: 1230px;
+  margin: auto;
+}
+
+section h3 {
+  color: #0cb1ff;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+section h1 {
+  font-size: 42px;
+}
+
+/* Inicio CSS tabs */
+
+.menutabs {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3px;
+  gap: 10px;
+  width: 73%;
+  margin-top: 42px;
+}
+
+.menutabs li {
+  width: 20%;
+}
+
+.menutabs li a {
+  display: block;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  color: #333;
+}
+
+.menutabs1{
+  display: none;
+}
+
+.activo {
+  background-color: #0973d7;
+  color: white !important;
+}
+
+#contenedor_tabs {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#contenedor_tabs article {
+  padding: 20px;
+}
+
+.link {
+  color: black;
+  transition: all 0.5s;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.link:hover {
+  background-color: #0286ff;
+  color: white;
+  border-radius: 8px;
+}
+
+#contenedor_tabs h2 {
+  color: #800000;
+  padding-bottom: 15px;
+}
+
+/* Fin de CSS de tabs */
+
+.galeria {
+  display: grid;
+  grid-template: repeat(3, auto) / repeat(3, auto);
+  grid-template-areas: "port7 port2 port2" "port71 port6 port3";
+  grid-gap: 20px;
+}
+
+.galeria figure{
+  border-radius: 15px;
+}
+
+.galeria figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.galeria1 {
+  display: grid;
+  grid-template-areas: "port7 port6";
+  grid-gap: 20px;
+  width: 66%;
+  border-radius: 15px;
+}
+
+.galeria1 figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.galeria3 {
+  display: grid;
+  grid-template-areas: "port21" "port31";
+  grid-gap: 20px;
+  width: 66%;
+  border-radius: 15px;
+}
+
+.galeria3 figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.galeria4 {
+  display: grid;
+  grid-template-areas: "port6 port7";
+  grid-gap: 20px;
+  width: 66%;
+  border-radius: 15px;
+}
+
+.galeria4 figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.galeria5 {
+  display: grid;
+  grid-template-areas: "port7 port2 port2";
+  grid-gap: 20px;
+  border-radius: 15px;
+}
+
+.galeria5 figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.puerto7 {
+  grid-area: port7;
+  position: relative;
+}
+
+.puerto7:hover .absolute {
+  top: 0;
+  opacity: 1;
+}
+
+.puerto71 {
+  grid-area: port71;
+  position: relative;
+}
+
+.puerto71:hover .absolute {
+  top: 0;
+  opacity: 1;
+}
+
+.puerto2 {
+  grid-area: port2;
+  position: relative;
+}
+
+.puerto21 {
+  grid-area: port21;
+  position: relative;
+}
+
+.puerto2:hover .absolute {
+  top: 0;
+  opacity: 1;
+}
+.puerto21:hover .absolute {
+  top: 0;
+  opacity: 1;
+}
+
+.puerto6 {
+  grid-area: port6;
+  position: relative;
+}
+
+.puerto6:hover .absolute {
+  top: 0;
+  opacity: 1;
+}
+
+.puerto3 {
+  grid-area: port3;
+  position: relative;
+}
+
+.puerto31 {
+  grid-area: port31;
+  width: 50%;
+  position: relative;
+}
+
+.puerto3:hover .absolute {
+  top: 0;
+  opacity: 1;
+}
+.puerto31:hover .absolute {
+  top: 0;
+  opacity: 1;
+}
+
+.absolute {
+  background-color: #0cb2ffc4;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s linear;
+  border-radius: 15px;
+}
+
+.absolute1 {
+  background-color: #0cb2ffc4;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s linear;
+  border-radius: 15px;
+}
+
+.messenger {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 10px;
+  margin-top: 160px;
+}
+
+.absolute h1 {
+  color: white;
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.absolute p {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.absolute1 h1 {
+  color: white;
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.absolute1 p {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+.view_news{
+  margin: auto;
+  margin-top: 25px;
+  background-color: #028bff;
+  color: white;
+  max-width: 300px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: all .5s;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.view_news:hover{
+  background-color: #1ca2ff;
+}
+
+
+.view_news a{
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+}

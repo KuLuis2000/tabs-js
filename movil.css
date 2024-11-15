@@ -1,0 +1,189 @@
+@media screen and (max-width: 768px){
+    .menutabs {
+        gap: 10px;
+        width: 90%;
+      }
+
+      .galeria {
+        display: grid;
+        grid-template: repeat(3, auto) / repeat(3, auto);
+        grid-template-areas: "port7 port2" "port7 port6" "port3 port6" "port3 port71" "port0 port71";
+      }
+
+      .galeria1{
+        width: 100%;
+      }
+
+      .galeria3 {
+        display: grid;
+        grid-template-areas: "port21 port31" "port0 port31";
+        width: 100%;
+      }
+
+      .puerto31 {
+        grid-area: port31;
+        width: 100%;
+      }
+
+      .galeria4 {
+        width: 100%;
+      }
+
+      .galeria5 {
+        display: grid;
+        grid-template-areas: "port7 port2" "port7 port0";
+        grid-gap: 20px;
+      }
+
+      .messenger {
+        color: white;
+        text-align: center;
+        font-size: 70px;
+        margin-bottom: 10px;
+        margin-top: 90px;
+      }
+
+      .mensaje{
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 10px;
+        margin-top: 5px !important;
+      }
+
+      .absolute1{
+        text-align: center;
+      }
+
+      .absolute1 h1 {
+        color: white;
+        text-align: center;
+        font-size: 27px;
+        margin-bottom: 5px;
+      }
+      
+      .absolute1 p {
+        color: white;
+        font-size: 13px;
+        text-align: center;
+        padding: 5px;
+      }
+      
+      .absolute1 .arrow {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        margin-top: -20px;
+      }
+}
+
+@media screen and (max-width: 480px){
+    section h3{
+        padding-left: 10px;
+    }
+    section h1 {
+        font-size: 30px;
+        padding-left: 10px;
+      }
+
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .galeria1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .galeria3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .galeria4{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .galeria5{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menutabs{
+        display: none;
+        text-align: left;
+    }
+
+    .menutabs1 {
+        display: block;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3px;
+        gap: 10px;
+        width: 80%;
+        margin-top: 42px;
+      }
+
+      .only{
+        width: 38%;
+      }
+
+      .only li{
+        width: 100% !important;
+      }
+
+      .menutabs1 li {
+        width: 50%;
+      }
+      
+      .menutabs1 li a {
+        display: block;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 13px;
+        color: #333;
+      }
+
+      .galeria .puerto7{
+        order: -1;
+      }
+
+      .galeria .puerto2{
+        order: 1;
+      }
+
+      .galeria .puerto6 {
+        order: 3;
+      }
+      .galeria .puerto3 {
+        order: 6;
+      }
+
+      .galeria .puerto71 {
+        order: 9;
+      }
+
+      .galeria4 .puerto6{
+        order: -1;
+      }
+
+      .galeria4 .puerto7{
+        order: 1;
+      }
+
+      .view_news{
+        width: 73%;
+      }
+
+      .view_news a{
+        font-size: 15px;
+      }
+}
